@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div style="display: flex; gap: 50px; width: 100%;">
+        <div class="div1" style="background-color: green; flex: 1 ">
+            <h1>First Div</h1>
+        </div>
+        <div class="div2" style="background-color: blueviolet; flex: 1">
+            <h1>First Div</h1>
+            <h2>Second Div</h2>
+        </div>
+    </div>
+    <script>
+        window.onload = (e) => { //Запись js
+            let title2 = document.getElementsByTagName('h2');
+            console.log('h2');
+        }
+        jQuery(document).ready(function() { //Первый вариант записи jquery
+            let  title1 = jQuery('h1');
+            console.log(title1);
+        })
+        $(document).ready(function(){ //Второй вариант записи jquery
+            let divs = $('div');
+            console.log(divs);
+        })
+    </script>
+</body>
+
+</html>
